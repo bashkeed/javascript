@@ -1,4 +1,10 @@
-let a =10
-let b=20
-a+=20
-console.log(a)
+function checkColor(code) {
+  if (code === 1) {
+    console.log("red");
+  } else if (code === 2) {
+    console.log("blue");
+  } else {
+    console.log("incorrect code");
+  }
+}
+checkColor(2)
