@@ -23,5 +23,4 @@ function decodeColor(code) {
     default:
       console.log("Unknown code");
   }
-}
-decodeColor(x)
+}decodeColor(10)
