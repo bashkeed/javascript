@@ -47,6 +47,21 @@
 
 
 //  Initializing a gimli object
+// var gimli = {
+//     name: "Gimli",
+//     race: "dwarf",
+//     weapon: "axe",
+//     greet: function() {
+//         return `Hi, my name is ${this.name}!`;
+//     },
+// };
+// // Retrieving the value of the weapon property using the dot notation
+// console.log(gimli.weapon); // prints “axe”
+// // Retrieving the value of the weapon property using the bracket notation
+// console.log(gimli["race"]); // prints “axe”
+
+
+//  Initializing a gimli object
 var gimli = {
     name: "Gimli",
     race: "dwarf",
@@ -55,7 +70,20 @@ var gimli = {
         return `Hi, my name is ${this.name}!`;
     },
 };
-// Retrieving the value of the weapon property using the dot notation
-console.log(gimli.weapon); // prints “axe”
-// Retrieving the value of the weapon property using the bracket notation
-console.log(gimli["weapon"]); // prints “axe”
+
+// Adding a new age property to gimli using the dot notation
+gimli.age = 139;
+
+// Adding new age property to gimli using the dot notation
+gimli["age"] = 139;
+// Adding a new fight method to gimli
+gimli.fight = function() {
+    return `Gimli attacks with an ${this.weapon}.`;
+}
+
+console.log(gimli)
+// prints {name: "Gimli", race: "dwarf", weapon: "axe", age: 139, greet: ƒ, fight: ƒ}
+
+// Calling the newly created method fight
+console.log(gimli.fight());
+// prints "Gimli attacks with an axe."
