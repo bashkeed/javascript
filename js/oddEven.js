@@ -34,7 +34,20 @@
 // console.log(students.name)
 
 //  Initializing a gimli object
-const gimli = {
+// const gimli = {
+//     name: "Gimli",
+//     race: "dwarf",
+//     weapon: "axe",
+//     greet: function() {
+//         return `Hi, my name is ${this.name}!`;
+//     },
+// };
+// console.log(gimli)
+
+
+
+//  Initializing a gimli object
+var gimli = {
     name: "Gimli",
     race: "dwarf",
     weapon: "axe",
@@ -42,4 +55,7 @@ const gimli = {
         return `Hi, my name is ${this.name}!`;
     },
 };
-console.log(gimli)
+// Retrieving the value of the weapon property using the dot notation
+console.log(gimli.weapon); // prints “axe”
+// Retrieving the value of the weapon property using the bracket notation
+console.log(gimli["weapon"]); // prints “axe”
