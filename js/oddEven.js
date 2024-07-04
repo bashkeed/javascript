@@ -22,10 +22,24 @@
 // console.log(num.push('zubair'))
 // console.log(num.length)
 
-let students = {
-    name : "bashir",
-    age :20,
-    grade: 100
+// num[1]=34
+// console.log(num)
 
-}
-console.log(students.name)
+// let students = {
+//     name : "bashir",
+//     age :20,
+//     grade: 100
+
+// }
+// console.log(students.name)
+
+//  Initializing a gimli object
+const gimli = {
+    name: "Gimli",
+    race: "dwarf",
+    weapon: "axe",
+    greet: function() {
+        return `Hi, my name is ${this.name}!`;
+    },
+};
+console.log(gimli)
