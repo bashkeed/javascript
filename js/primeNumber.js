@@ -13,4 +13,4 @@
     return `${checkprime} is a prime number`
  }
 
- console.log(primeNumber(14))
+ console.log(primeNumber(15))
