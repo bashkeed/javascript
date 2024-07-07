@@ -11,4 +11,4 @@ function minNumber(item1, item2) {
   return min;
 }
 
-console.log(minNumber(500,200))
+console.log(minNumber(5000,10000))
