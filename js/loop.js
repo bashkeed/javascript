@@ -5,11 +5,15 @@
 //     count++;
 // }
 
+
+function arrSum(){
 var numbers = [19, 65, 1, 2, 6, 1, 9, 9, 2, 1]; 
 var sum = 0;
 for ( var i in numbers ) {
-        if ( i % 2 == 0 ) continue;
-        sum += numbers[i]
+      //  if ( i % 2 == 0 ) continue;
+    sum += numbers[i]
 }
+return sum;
 
-console.log(sum);
+}
+console.log(arrSum());
