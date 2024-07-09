@@ -19,16 +19,24 @@
 
 // console.log(filterArray());
 
-function countTrue(arr){
-   let count = 0;
- for(let i=0; i< arr.length; i++){
-     if(arr[i] === true){
-      count++;
-     }
+// function countTrue(arr){
+//    let count = 0;
+//  for(let i=0; i< arr.length; i++){
+//      if(arr[i] === true){
+//       count++;
+//      }
   
- }
- return count;
+//  }
+//  return count;
+
+// }
+
+// console.log(countTrue([true,false,false,true,true]))
+
+function redundant(str){
+  return function(){
+    str
+  }
 
 }
-
-console.log(countTrue([true,false,false,true,true]))
+console.log(redundant('apple'))
